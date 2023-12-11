@@ -1,0 +1,46 @@
+print("------------------------------------")
+print("Bem vindo(a) ao jogo de adivinhação!")
+print("------------------------------------")
+
+numero_secreto = 40
+total_de_tentativas = 3
+rodada = 1
+
+
+while(rodada <= total_de_tentativas): 
+    print("Tentativa:",rodada, "de", total_de_tentativas)
+    chute_str = input("Digite o seu número:")
+    print("Voce digitou: ",  chute_str)
+    chute = int(chute_str)
+
+    acertou = numero_secreto == chute
+    maior = chute > numero_secreto
+    menor = chute < numero_secreto
+
+if(acertou):
+    print("Parabéns, voce acertou (:")
+else:
+    if( maior):
+        print("Que pena, voce errou. O seu chute foi maior do que o número secreto.")
+    elif(menor):
+        print("Que pena, voce errou. O seu chute foi menor do que o numero secreto.")
+        
+    rodada = rodada + 1
+    
+    
+    
+print("Fim de jogo")
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
