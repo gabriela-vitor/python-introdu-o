@@ -1,13 +1,1 @@
-print("brasil", "ganhou", 5, "titulos mundiais", sep="-", end="!\n\n")
-print("brasil", "ganhou", 5, "titulos mundiais", end="\n\n")
 
-pais = "italia"
-quantidade = 4
-
-dia = 6
-mes = 11
-ano = 2023
-
-print(pais, "ganhou", quantidade, "titulos mundiais")
-
-print(dia, mes, ano, sep="/")
