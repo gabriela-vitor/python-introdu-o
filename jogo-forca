@@ -2,8 +2,24 @@ print("*************************************")
 print("***** Bem vindo(a) ao jogo Forca!****")
 print("*************************************")
 
+''' arquivo para abrir uma pasta e colher as informações de dentro
+
+arquivo = open("palavras.txt", "r")
+  palavras = []
+  for linha in arquivo:
+      linha = linha.strip()
+      palavras.append(linha)
+  arquivo.close() 
+  
+  numero = random.randrange(0,len(palavras))
+  palavra_secreta = palavras[numero].upper
+  
+'''
+
 palavra_secreta = "pera".upper()
 letras_acertadas = ["_" for letra in palavra_secreta]
+
+
 
 
 
@@ -35,6 +51,6 @@ while(not enforcou and not acertou):
 if(acertou):
     print("Voce ganhou!")
 else:
-    print("Voce perdeu")
+    print("Voce foi enforcado!")
 
 print("Fim de jogo")
