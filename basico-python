@@ -1,0 +1,25 @@
+''' numero impar e par
+numero_escolhido = (int(input('Digite um numero\n')))
+
+if numero_escolhido %2 == 0:
+    print('o numero e par')
+else:
+    print('o numero e impar')
+'''
+
+''' idades
+idade = (int(input('Digite a sua idade\n')))
+
+if 0 < idade <= 12:
+    print('Crianca')
+elif 12 < idade <= 18:
+    print('Adolescente')
+elif idade > 18:
+    print('Adulto')
+else:
+    ('Valor invalido')
+
+'''
+
+
+
