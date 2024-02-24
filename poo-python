@@ -1,0 +1,65 @@
+'''
+class carro:
+    def __init__(self, modelo, cor, ano):
+        self.modelo = modelo
+        self.cor = cor
+        self.ano = ano
+        
+meu_carro = carro(modelo='BMW', cor='Preto', ano='2022')
+'''
+
+'''
+class restaurante:
+    def __init__(self, nome, categoria, ativo = False):
+        self.nome = nome
+        self.categoria = categoria
+        self.ativo = ativo
+        
+    def __str__(self):
+        return f'{ self.nome} | {self.categoria}'
+        
+meu_restaurante = restaurante(nome = 'La Martina', categoria = 'Lanches')
+print(meu_restaurante)
+'''
+
+'''
+class Pessoa:
+    def __init__(self, nome='', idade=0, profissao=''):
+        self.nome = nome
+        self.idade = idade
+        self.profissao = profissao
+        
+    def __str__(self):
+        return f'{self.nome} , {self.idade} anos , {self.profissao}'
+        
+    @property
+    def saudacao(self):
+        if self.profissao:
+            return f'Olá, sou {self.nome}! Trabalho com {self.profissao}'
+        else:
+            return f'Olá, sou {self.nome}'
+            
+    def aniversario(self):
+        self.idade += 1
+        
+pessoa1= Pessoa(nome='Marta', idade=46, profissao='Enfermeira')
+pessoa2= Pessoa(nome='Caio', idade=38, profissao='Engenheiro')
+pessoa3= Pessoa(nome='Paola', idade=23)
+        
+print("INFORMAÇÕES INICIAIS:")
+print(pessoa1)
+print(pessoa2)
+print(pessoa3)
+    
+pessoa1.aniversario()
+pessoa3.aniversario()
+    
+print("INFORMAÇÕES APÓS ANIVERSÁRIO:")
+print(pessoa1)
+print(pessoa3)
+print()
+    
+print(pessoa1.saudacao)
+print(pessoa2.saudacao)
+print(pessoa3.saudacao)
+'''
